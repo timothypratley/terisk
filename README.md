@@ -114,7 +114,9 @@ Tests are great, but often users benefit from having small examples closer to ha
 
 #### Rich comment tests
 
-https://github.com/hyperfiddle/rcf
-https://github.com/matthewdowney/rich-comment-tests
+* [Hyperfiddle Rich Comment Forms](https://github.com/hyperfiddle/rcf)
+* [Rich Comment Tests](https://github.com/matthewdowney/rich-comment-tests)
 
 Do not get added to documentation.
+These projects prioritize testing over examples.
+Perhaps it would be desirable to use `examples` and `tests` macros to distinguish between them?
