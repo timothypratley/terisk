@@ -2,21 +2,21 @@
 
 <img src="terisk.svg.png" alt="an asterisk" align="right">
 
-Annotate functions with examples
+Annotate functions with examples that are tested and appended to docstrings.
 
-> ** Terisk is short for asterisk,
-a common way to make annotations.
+> ** Terisk is short for asterisk; a common way to annotate.
 
 ## Usage
 
 [![Clojars Project](https://img.shields.io/clojars/v/org.scicloj/terisk.svg)](https://clojars.org/org.scicloj/terisk)
 
 ```clojure
-  (ns my.code (:require [terisk.macros :refer [**]]))
-  (defn foo
-    "this is a docstr"
-    [x])
-  (** (foo 2) 1)
+(ns my.code (:require [terisk.macros :refer [**]]))
+(defn foo
+  "this is a docstr"
+  [x]
+  (inc x))
+(** (foo 2) 1)
 ```
 
 Don't

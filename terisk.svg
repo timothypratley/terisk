@@ -2,10 +2,24 @@
      width="256"
      height="256"
      viewBox="-128 -128 256 256">
-    <path stroke="black"
-          stroke-width="60"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          fill="none"
-          d="M 0 -100 0 0 -95 -31 0 0 -59 81 0 0 59 81 0 0 95 -31" />
+    <g>
+        <path fill="none"
+              stroke-linecap="round"
+              stroke="#62B132"
+              stroke-width="32"
+              d="M -112,-32 L -112,32 Q -112,112 -32,112 64,112 96,96"/>
+        <path fill="none"
+              stroke-linecap="round"
+              stroke="#5881D8"
+              stroke-width="32"
+              d="M 112,32 L 112,-32 Q 112,-112 32,-112 -64,-112 -96,-96"/>
+    </g>
+    <g transform="scale(.7)">
+        <path stroke="#FFCD52"
+              stroke-width="64"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+              d="M 0,0 L0,-90 0,0 -86,-28 0,0 -53,73 0,0 53,73 0,0 86,-28"/>
+    </g>
 </svg>
