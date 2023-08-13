@@ -28,7 +28,7 @@ jobs:
           cli:  latest     # Clojure CLI based on tools.deps
 
       - name: Release
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository == 'kalai-transpiler/kalai'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository == 'timothypratley/tarisk'
         env:
           CLOJARS_PASSWORD: ${{ secrets.CLOJARSTOKEN }}
           CLOJARS_USERNAME: timothypratley
