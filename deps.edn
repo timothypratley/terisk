@@ -1,3 +1,13 @@
 {:paths   ["src"]
  :deps    {}
- :aliases {:dev {:extra-paths ["dev"]}}}
+ :aliases {:dev    {:extra-paths ["dev"]}
+           ;; Run with clojure -T:build jar
+           :test {:extra-paths ["test"]
+                  :extra-deps {io.github.cognitect-labs/test-runner
+                               {:git/tag "v0.5.1" :git/sha "dfb30dd6605cb6c0efc275e1df1736f6e90d4d73"}}
+                  :main-opts ["-m" "cognitect.test-runner"]
+                  :exec-fn cognitect.test-runner.api/test}
+           :build  {:extra-paths  ["dev"]
+                    :replace-deps {io.github.clojure/tools.build {:mvn/version "0.9.5"}
+                                   slipset/deps-deploy           {:mvn/version "0.2.1"}}
+                    :ns-default   build}}}

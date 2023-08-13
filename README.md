@@ -8,7 +8,7 @@ Annotate functions with examples that are tested and appended to docstrings.
 
 ## Usage
 
-[![Clojars Project](https://img.shields.io/clojars/v/org.scicloj/terisk.svg)](https://clojars.org/org.scicloj/terisk)
+[![Clojars Project](https://img.shields.io/clojars/v/timothypratley/terisk.svg)](https://clojars.org/timothypratley/terisk)
 
 ```clojure
 (ns my.code (:require [terisk.macros :refer [**]]))
